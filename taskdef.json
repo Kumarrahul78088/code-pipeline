@@ -1,0 +1,9 @@
+{
+    "family": "three-tier",
+    "containerDefinitions": [
+        {
+            "name": "three-tier",
+            "image": "<IMAGE1_NAME>"
+        }
+    ]
+}
