@@ -1,8 +1,8 @@
 {
-    "family": "three-tier",
+    "family": "three-tier-td",
     "containerDefinitions": [
         {
-            "name": "three-tier",
+            "name": "three-tier-container",
             "image": "<IMAGE1_NAME>"
         }
     ]
