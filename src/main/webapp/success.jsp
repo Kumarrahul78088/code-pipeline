@@ -7,7 +7,7 @@ Session ID: <%=session.getId()%><br/>
 <a href="index.jsp">Please Login Ho Gayaaaaa BCCCC</a>
 <%} else {
 %>
-Welcome <%=session.getAttribute("userName")%>
+Welcome Back <%=session.getAttribute("userName")%>
 <a href='logout.jsp'>Log out</a>
 <%
     }
