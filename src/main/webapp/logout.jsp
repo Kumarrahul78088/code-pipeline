@@ -1,12 +1,3 @@
-#<%
-#Session ID: <%=session.getId()%><br/>
-#
-#session.setAttribute("userName", null);
-#session.invalidate();
-#response.sendRedirect("index.jsp");
-#%>
-
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
