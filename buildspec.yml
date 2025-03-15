@@ -27,11 +27,12 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - #docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
-      - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDefinitions.json
+      - printf '[{"name":"three-tier","imageUri":"%s"}]' "$REPOSITORY_URI:$IMAGE_TAG" > imageDefinitions.json
       - cat imageDefinitions.json
+
 
 artifacts:
   files:
