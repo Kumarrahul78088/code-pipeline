@@ -9,7 +9,7 @@
     rs = st.executeQuery("select * from USER where userName='" +userName + "' and password='" +password + "'");
     if (rs.next()) {
         session.setAttribute("userName", userName);
-        out.println("session="+session");
+        out.println("session="+session);
         response.sendRedirect("success.jsp");
     } else {
         out.println("Invalid password <a href='index.jsp'>try again</a>");
