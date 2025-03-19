@@ -6,7 +6,7 @@ ENV DB_HOST=database-2.cel4usyuo6oc.us-east-1.rds.amazonaws.com
 ENV DB_PORT=3306
 ENV DB_NAME=jwt
 ENV DB_USER=admin
-ENV DB_PASSWORD=admin123
+ENV DB_PASSWORD=adminadmin
 
 # Install necessary dependencies
 RUN apt-get update && apt-get install -y \
