@@ -1,9 +1,0 @@
-version: 0.0
-Resources:
-  - TargetService:
-      Type: AWS::ECS::Service
-      Properties:
-        TaskDefinition: "three-tier-td"
-        LoadBalancerInfo:
-          ContainerName: "three-tier-container"
-          ContainerPort: 8080
